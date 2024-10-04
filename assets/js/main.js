@@ -1,22 +1,17 @@
-// Select hamburger icon and nav--item
-const hamburgerIcon = document.getElementById('hamburgerIcon');
-const closeIcon = document.getElementById('closeIcon');
-const navItem = document.querySelector('.nav--item');
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    const navItems = document.querySelector('.nav--item');
 
-// Function to show nav menu
-function showNav() {
-    navItem.classList.add('active'); // Show nav
-    hamburgerIcon.style.display = 'none'; // Hide hamburger icon
-    closeIcon.style.display = 'block'; // Show close icon
-}
+    hamburgerIcon.addEventListener('click', () => {
+        navItems.classList.toggle('active'); // Add class to show menu
+        hamburgerIcon.style.display = 'none'; // Hide hamburger icon
+        closeIcon.style.display = 'flex'; // Show close icon
+    });
 
-// Function to hide nav menu
-function hideNav() {
-    navItem.classList.remove('active'); // Hide nav
-    hamburgerIcon.style.display = 'block'; // Show hamburger icon
-    closeIcon.style.display = 'none'; // Hide close icon
-}
-
-// Add event listeners
-hamburgerIcon.addEventListener('click', showNav); // On hamburger click, show nav
-closeIcon.addEventListener('click', hideNav); // On close icon click, hide nav
+    closeIcon.addEventListener('click', () => {
+        navItems.classList.toggle('active'); // Remove class to hide menu
+        hamburgerIcon.style.display = 'flex'; // Show hamburger icon
+        closeIcon.style.display = 'none'; // Hide close icon
+    });
+});

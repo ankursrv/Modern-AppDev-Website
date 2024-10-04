@@ -15,12 +15,12 @@
     /* < !-- Mobile menu  --> */
 
     .nav--item {
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
         transition: transform 0.5s ease-in-out;
         flex-direction: column;
-        background-color: red;
+        background-color: var(--dark-color);
         position: absolute;
-        left: 0;
+        left: -100%;
         width: 100%;
         height: 100vh;
         top: 0;
@@ -28,15 +28,20 @@
         align-items: center;
         justify-content: center;
         z-index: 20;
+        gap: 50px;
     }
 
     .nav--item.active {
         display: flex;
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        left: 0;
     }
 
     .nav--item ul {
         flex-direction: column;
         text-align: center;
     }
+        .nav--item ul li a{
+            color: white;
+        }
 }
