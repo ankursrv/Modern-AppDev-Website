@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variables  */
+
+/* Colors  */
+:root {
+--primary-red : red;
+}
+
+/* Headings  */
+h1,h2,h3,h4,h5,h6{
+    font-size: none;
+    font-weight: normal;
+    line-height: inherit;
+}
+.h1{
+ color: var(--primary-red);
+}
+.h2{
+ 
+}
+.h3{
+ 
+}
+.h4{
+ 
+}
+.h5{
+ 
+}
+.h6{
+ 
+}
+
+body{background-color: rgb(202, 197, 197); font-size: 16px;}
