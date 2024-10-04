@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    color: var(--dark-color);
-    font-size: 16px;
-    font-family: var(--primary-font);
-    background-color: whitesmoke;
-}
-
 /* Variables  */
 
 /* Colors  */
@@ -22,6 +15,12 @@ body {
     --accent-color: #7161ef;
     --white-smoke: #f5f5f5;
     --primary-font: "Inter", sans-serif;
+}
+
+body {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-family: var(--primary-font);
 }
 
 /* Headings  */
@@ -64,7 +63,6 @@ h6 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px;
 }
 
 /* Anchor Tag  */
@@ -73,11 +71,16 @@ h6 {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    transition: all 0.7s;
+    transition: all 0.3s;
 }
 
 .anchorTag:hover {
     color: var(--accent-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
 }
 
 /* Paragraph  */
@@ -112,3 +115,119 @@ h6 {
 .shadowHover-1 {
     box-shadow: 0 3px 80px rgba(0, 0, 0, 0.1);
 }
+
+/* Button  */
+button {
+    border: none;
+}
+
+.btn {
+    padding: 10px 34px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    letter-spacing: 1px;
+}
+
+li {
+    list-style: none;
+}
+
+/*? Common Style  */
+
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+/* < ==========Start Header ========== > */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+nav {
+    background-color: whitesmoke;
+    height: 74px;
+    padding: 0 32px;
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.nav--item {
+    gap: 32px;
+}
+
+.nav--item ul {
+    gap: 42px;
+}
+.nav--item {
+    display: flex;
+
+}
+
+/* < !-- hamburger Icon Deskto , hamburger Close Icon Mobile  --> */
+.hamburger-icon, .hamburger-close-icon{
+display: none;
+}
+
+.hamburger-icon img, .hamburger-close-icon img {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* hamburger Close Icon Mobile */
+.hamburger-close-icon{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+   }
+
+
+
+
+/* < ==========End Header ========== > */
+
+
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
+/* < ==========Start Header ========== > */
+
+/* < ==========End Header ========== > */
