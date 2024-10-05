@@ -119,18 +119,34 @@ a {
 /* Button  */
 button {
     border: none;
+    background-color: transparent;
 }
 
 .btn {
-    padding: 10px 34px;
+    padding: 8px 34px;
     font-size: 16px;
     font-weight: 500;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #5947de;
+    border: 2px solid #5947de;
 }
 
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--light-color);
     letter-spacing: 1px;
+}
+
+.btn-secondary {
+    color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    color: var(--white-smoke);
 }
 
 li {
@@ -184,39 +200,114 @@ nav {
 .nav--item ul {
     gap: 42px;
 }
+
 .nav--item {
     display: flex;
 
 }
 
 /* < !-- hamburger Icon Deskto , hamburger Close Icon Mobile  --> */
-.hamburger-icon, .hamburger-close-icon{
-display: none;
+.hamburger-icon,
+.hamburger-close-icon {
+    display: none;
 }
 
-.hamburger-icon img, .hamburger-close-icon img {
+.hamburger-icon img,
+.hamburger-close-icon img {
     width: 20px;
     height: auto;
     cursor: pointer;
 }
 
 /* hamburger Close Icon Mobile */
-.hamburger-close-icon{
+.hamburger-close-icon {
     position: absolute;
     top: 4rem;
     right: 2rem;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7478%) hue-rotate(132deg) brightness(106%) contrast(105%);
-   }
-
-
-
+}
 
 /* < ==========End Header ========== > */
 
 
-/* < ==========Start Header ========== > */
+/* < ==========Start Hero Banner ========== > */
+.hero-banner {
+    height: calc(100vh - 74px);
+    padding: 3.2742rem 32px 0 32px;
+}
 
-/* < ==========End Header ========== > */
+.hero-banner .left,
+.hero-banner .right {
+    width: 50%;
+}
+
+.hero-banner .right {
+    position: relative;
+    z-index: -1;
+}
+
+.hero-banner .right::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #ad95ff;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(115px);
+}
+
+.hero-banner .right img {
+    width: 586px;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Hero Banner content */
+.banner-content p {
+    margin-top: 18px;
+}
+
+/* Hero Banner Button */
+.banner-btn {
+    gap: 32px;
+    margin-top: 2rem;
+}
+
+.banner-btn button a {
+    display: inline-block;
+}
+
+/* Featured on */
+.featured {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 32px;
+    border-radius: 30px;
+    gap: 8px;
+}
+
+.feat-brand {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 62px;
+}
+
+
+/* < ==========End Hero Banner ========== > */
+
+
+
+
+
+
+
 /* < ==========Start Header ========== > */
 
 /* < ==========End Header ========== > */
