@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{scroll-behavior: smooth;}
 
 /* Variables  */
 
@@ -209,6 +210,7 @@ li {
 header {
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .logo {
@@ -341,7 +343,7 @@ nav {
 
 
 /* < ==========Start Mobile App Development ========== > */
-#app-development {
+#appDevelopment {
     background-color: var(--white-smoke);
     padding-top: 180px;
 }
