@@ -1,12 +1,18 @@
 @media only screen and (max-width:1920px) {}
 
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width:1120px) {
+
     /* Service Card */
-        /* .service-card-wrapper {
-            display: grid;
-            grid-template-columns: auto;
-            gap: 42px;
-        } */
+    .service-card-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 42px;
+    }
+
+    /* Blog */
+    .all-post-btn {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:960px) {
@@ -44,20 +50,14 @@
     }
 
     /* Mobile App Development */
-    .development {
+    .development,
+    .contact {
         flex-direction: column;
     }
 }
 
 
 @media only screen and (max-width:768px) {
-
-    /* Headings  */
-    .h1 {
-        font-size: 48px;
-        font-weight: 800;
-        line-height: 62px;
-    }
 
     /*  hamburger Menu */
     .hamburger-icon {
@@ -109,13 +109,16 @@
 
     /* Featured on */
     .feat-brand {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 32px;
     }
 
+    .featured {
+        margin-top: 3rem;
+    }
+
     /* Mobile App Development */
-    .development--items {
+    .development--items,
+    .contact--items {
         grid-template-columns: auto;
         gap: 36px;
     }
@@ -123,6 +126,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+    .h1 {
+        line-height: inherit;
+    }
 
     /* Hero Banner content */
     .banner-content {
@@ -132,4 +139,10 @@
     .btn {
         padding: 8px 24px;
     }
+
+    /* Feedback  */
+        .form--items{
+            flex-direction: column;
+            gap: 0;
+        }
 }
